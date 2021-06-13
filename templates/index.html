@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.pngplay.com/wp-content/uploads/6/Blue-Face-Mask-Transparent-PNG.png"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <title>Face Mask Detector</title>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="footage">
+        <h1>Face Mask Detector</h1>
+        <img src="{{ url_for('video_feed') }}" alt="footage">
+    </div>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
